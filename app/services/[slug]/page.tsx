@@ -87,7 +87,7 @@ export default async function ServiceDetailPage({
         }
       />
 
-      <section className="py-20 bg-white">
+      <section className="py-20 section-tint">
         <div className="container-page grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
             <h2 className="font-heading font-extrabold text-2xl text-[var(--navy)] mb-4">

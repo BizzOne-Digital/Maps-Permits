@@ -66,7 +66,7 @@ export default async function ServicesPage() {
         breadcrumb={<Breadcrumb items={[{ label: "Services" }]} />}
       />
 
-      <section className="py-20 bg-white">
+      <section className="py-20 section-tint">
         <div className="container-page">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (

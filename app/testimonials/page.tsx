@@ -40,7 +40,7 @@ export default async function TestimonialsPage() {
         breadcrumb={<Breadcrumb items={[{ label: "Testimonials" }]} />}
       />
 
-      <section className="py-20 bg-white">
+      <section className="py-20 section-tint">
         <div className="container-page grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((t) => (
             <TestimonialCard

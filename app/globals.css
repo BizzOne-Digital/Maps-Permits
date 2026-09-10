@@ -7,8 +7,9 @@
   --sky-blue: #ddf1ff;
   --bright-green: #64d719;
   --dark-green: #35a90e;
-  --off-white: #f8fbfd;
-  --border: #dce8f2;
+  --off-white: #eaf4fc;
+  --surface: #ffffff;
+  --border: #cfe2f0;
   --text: #122237;
   --muted: #65758b;
 
@@ -24,6 +25,7 @@
   --color-bright-green: var(--bright-green);
   --color-dark-green: var(--dark-green);
   --color-off-white: var(--off-white);
+  --color-surface: var(--surface);
   --color-border: var(--border);
   --color-text: var(--text);
   --color-muted: var(--muted);
@@ -49,6 +51,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 .grad-green {
   background-image: linear-gradient(135deg, #75e927, #42c90e);
+}
+
+/* Premium tinted section backgrounds — used instead of flat white to keep brand colours visible */
+.section-tint {
+  background-image: radial-gradient(circle at 15% 0%, rgba(8, 120, 209, 0.08), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(100, 215, 25, 0.07), transparent 45%),
+    linear-gradient(180deg, #f2f9ff 0%, #e7f2fc 100%);
+}
+.section-tint-alt {
+  background-image: radial-gradient(circle at 85% 0%, rgba(8, 120, 209, 0.1), transparent 50%),
+    linear-gradient(180deg, #e7f2fc 0%, #dcecf9 100%);
 }
 
 .container-page {

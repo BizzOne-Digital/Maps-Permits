@@ -174,7 +174,7 @@ export default async function HomePage() {
       </section>
 
       {/* TRUST / INTRO */}
-      <section className="py-20 bg-white">
+      <section className="py-20 section-tint">
         <div className="container-page grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-block text-xs font-bold tracking-widest uppercase text-[var(--primary-blue)] mb-3">
@@ -265,7 +265,7 @@ export default async function HomePage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-20 bg-white">
+      <section className="py-20 section-tint-alt">
         <div className="container-page">
           <SectionHeading eyebrow="OUR PROCESS" title="A Clear Path From Idea to Approval" />
           <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
@@ -341,23 +341,27 @@ export default async function HomePage() {
       </section>
 
       {/* SERVICE AREA */}
-      <section className="py-20 bg-white">
-        <div className="container-page text-center">
+      <section className="py-20 bg-[var(--navy)] relative overflow-hidden">
+        <div className="absolute inset-0 opacity-40" style={{ backgroundImage: "radial-gradient(circle at 10% 10%, rgba(8,120,209,0.35), transparent 40%), radial-gradient(circle at 90% 90%, rgba(100,215,25,0.25), transparent 40%)" }} />
+        <div className="container-page text-center relative">
           <SectionHeading
             eyebrow="SERVICE AREA"
-            title="Serving Brampton and Communities Across the GTA"
-            description={`We proudly serve homeowners, builders, developers, and contractors across ${SERVICE_AREA_CITIES.join(", ")}, and surrounding areas within about 100km of Brampton, Ontario.`}
+            title="Serving Brampton and Communities Across Ontario"
+            description={`We proudly serve homeowners, builders, developers, and contractors across ${SERVICE_AREA_CITIES.length}+ cities and municipalities within about 100km of Brampton, Ontario.`}
+            light
           />
-          <div className="flex flex-wrap justify-center gap-2 mt-8 mb-10">
-            {SERVICE_AREA_CITIES.map((city) => (
-              <span
-                key={city}
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[var(--primary-blue)] bg-[var(--sky-blue)] rounded-full px-3.5 py-1.5"
-              >
-                <MapPin className="w-3.5 h-3.5" />
-                {city}
-              </span>
-            ))}
+          <div className="mt-10 mb-10 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm p-6 sm:p-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-4 text-left">
+              {SERVICE_AREA_CITIES.map((city) => (
+                <span
+                  key={city}
+                  className="inline-flex items-center gap-2 text-sm font-medium text-white/85"
+                >
+                  <MapPin className="w-3.5 h-3.5 text-[var(--bright-green)] shrink-0" />
+                  {city}
+                </span>
+              ))}
+            </div>
           </div>
           <CTAButton href="/contact" variant="primary">Check Your Project Area</CTAButton>
         </div>

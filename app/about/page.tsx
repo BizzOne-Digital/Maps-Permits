@@ -25,7 +25,7 @@ export default function AboutPage() {
         breadcrumb={<Breadcrumb items={[{ label: "About Us" }]} />}
       />
 
-      <section className="py-20 bg-white">
+      <section className="py-20 section-tint">
         <div className="container-page grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative h-80 sm:h-[420px] rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1">
             <Image
@@ -108,7 +108,7 @@ export default function AboutPage() {
       </section>
 
       {/* WHO WE WORK WITH */}
-      <section className="py-20 bg-white">
+      <section className="py-20 section-tint-alt">
         <div className="container-page">
           <SectionHeading
             eyebrow="WHO WE HELP"
@@ -143,7 +143,7 @@ export default function AboutPage() {
                 description: "Fast permit and drawing insight to help close deals faster on properties with renovation or addition potential.",
               },
             ].map((item) => (
-              <div key={item.title} className="text-center p-6 rounded-xl border border-[var(--border)]">
+              <div key={item.title} className="text-center p-6 rounded-xl border border-[var(--border)] bg-white shadow-sm">
                 <span className="w-12 h-12 rounded-lg grad-blue text-white flex items-center justify-center mx-auto mb-4">
                   <item.icon className="w-5 h-5" />
                 </span>
@@ -172,23 +172,27 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-[var(--off-white)]">
-        <div className="container-page">
+      <section className="py-20 bg-[var(--navy)] relative overflow-hidden">
+        <div className="absolute inset-0 opacity-40" style={{ backgroundImage: "radial-gradient(circle at 10% 10%, rgba(8,120,209,0.35), transparent 40%), radial-gradient(circle at 90% 90%, rgba(100,215,25,0.25), transparent 40%)" }} />
+        <div className="container-page relative">
           <SectionHeading
             eyebrow="COVERAGE"
-            title="Proudly Serving the Greater Toronto Area"
-            description={`Based in Brampton, we support projects across ${SERVICE_AREA_CITIES.join(", ")}, and surrounding communities within roughly 100km.`}
+            title="Proudly Serving Ontario"
+            description={`Based in Brampton, we support projects across ${SERVICE_AREA_CITIES.length}+ cities and municipalities within roughly 100km.`}
+            light
           />
-          <div className="flex flex-wrap justify-center gap-2 mt-8 mb-10">
-            {SERVICE_AREA_CITIES.map((city) => (
-              <span
-                key={city}
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[var(--primary-blue)] bg-[var(--sky-blue)] rounded-full px-3.5 py-1.5"
-              >
-                <MapPin className="w-3.5 h-3.5" />
-                {city}
-              </span>
-            ))}
+          <div className="mt-10 mb-10 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm p-6 sm:p-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-4 text-left">
+              {SERVICE_AREA_CITIES.map((city) => (
+                <span
+                  key={city}
+                  className="inline-flex items-center gap-2 text-sm font-medium text-white/85"
+                >
+                  <MapPin className="w-3.5 h-3.5 text-[var(--bright-green)] shrink-0" />
+                  {city}
+                </span>
+              ))}
+            </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-10">
             {[
@@ -198,8 +202,8 @@ export default function AboutPage() {
               "Construction Support",
             ].map((point) => (
               <div key={point} className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[var(--dark-green)] shrink-0" />
-                <span className="text-sm font-medium text-[var(--text)]">{point}</span>
+                <CheckCircle2 className="w-5 h-5 text-[var(--bright-green)] shrink-0" />
+                <span className="text-sm font-medium text-white/85">{point}</span>
               </div>
             ))}
           </div>
