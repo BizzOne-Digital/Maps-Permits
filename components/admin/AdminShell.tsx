@@ -4,11 +4,9 @@ import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import {
   LayoutDashboard,
-  FileText,
   Wrench,
   MessageSquareQuote,
   Users,
-  Image as ImageIcon,
   Settings,
   LogOut,
   MapPin,
@@ -19,11 +17,9 @@ import { useState } from "react";
 
 const NAV = [
   { label: "Dashboard", href: "/admin/dashboard", icon: LayoutDashboard },
-  { label: "Pages", href: "/admin/pages", icon: FileText },
   { label: "Services", href: "/admin/services", icon: Wrench },
   { label: "Testimonials", href: "/admin/testimonials", icon: MessageSquareQuote },
   { label: "Leads", href: "/admin/leads", icon: Users },
-  { label: "Media", href: "/admin/media", icon: ImageIcon },
   { label: "Settings", href: "/admin/settings", icon: Settings },
 ];
 

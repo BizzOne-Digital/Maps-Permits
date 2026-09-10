@@ -8,7 +8,7 @@ const SERVICES = [
   "Permit Drawings",
   "Building Permit Applications",
   "Architectural Drawings",
-  "Site Plans & Mapping",
+  "Addition & Extension Drawings",
   "Municipal Approvals",
   "Construction Services",
 ];

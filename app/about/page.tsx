@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Target, Compass, ShieldCheck, MapPin, CheckCircle2, Users, ClipboardCheck, Clock, Building2 } from "lucide-react";
+import { Target, Compass, ShieldCheck, MapPin, CheckCircle2, Users, ClipboardCheck, Clock, Building2, KeyRound } from "lucide-react";
 import StatsCard from "@/components/common/StatsCard";
 import PageHero from "@/components/common/PageHero";
 import Breadcrumb from "@/components/common/Breadcrumb";
@@ -63,8 +63,8 @@ export default function AboutPage() {
       {/* STATS */}
       <section className="py-14 bg-[var(--navy)]">
         <div className="container-page grid grid-cols-2 lg:grid-cols-4 gap-5">
-          <StatsCard value="500+" label="Projects Supported" dark />
-          <StatsCard value="12+" label="GTA Municipalities" dark />
+          <StatsCard value="3000+" label="Projects Approved" dark />
+          <StatsCard value="55+" label="Municipalities" dark />
           <StatsCard value="24 HR" label="Fast-Track Drawings" dark />
           <StatsCard value="98%" label="Client Satisfaction" dark />
         </div>
@@ -115,7 +115,7 @@ export default function AboutPage() {
             title="Trusted by Homeowners, Builders & Developers"
             description="Whatever stage your project is at, our team adapts our drawings and municipal coordination to fit how you work."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mt-14">
             {[
               {
                 icon: Users,
@@ -136,6 +136,11 @@ export default function AboutPage() {
                 icon: Clock,
                 title: "Time-Sensitive Projects",
                 description: "A 24-hour fast-track drawing option for projects working against a tight timeline.",
+              },
+              {
+                icon: KeyRound,
+                title: "Realtors",
+                description: "Fast permit and drawing insight to help close deals faster on properties with renovation or addition potential.",
               },
             ].map((item) => (
               <div key={item.title} className="text-center p-6 rounded-xl border border-[var(--border)]">

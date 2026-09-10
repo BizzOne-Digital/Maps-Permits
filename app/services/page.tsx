@@ -85,8 +85,8 @@ export default async function ServicesPage() {
       {/* WHY CHOOSE US */}
       <section className="py-14 bg-[var(--navy)]">
         <div className="container-page grid grid-cols-2 lg:grid-cols-4 gap-5">
-          <StatsCard value="500+" label="Projects Supported" dark />
-          <StatsCard value="12+" label="GTA Municipalities" dark />
+          <StatsCard value="3000+" label="Projects Approved" dark />
+          <StatsCard value="55+" label="Municipalities" dark />
           <StatsCard value="24 HR" label="Fast-Track Drawings" dark />
           <StatsCard value="98%" label="Client Satisfaction" dark />
         </div>
