@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { MapPin, Phone, Mail, Share2, Camera, Briefcase } from "lucide-react";
 
@@ -22,15 +23,9 @@ export default function Footer() {
     <footer className="bg-[var(--navy)] text-white">
       <div className="container-page py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
-          <Link href="/" className="flex items-center gap-2 mb-3">
-            <span className="flex items-center justify-center w-9 h-9 rounded-lg grad-blue text-white">
-              <MapPin className="w-5 h-5" />
-            </span>
-            <span className="font-heading font-extrabold text-lg">
-              Maps &amp; Permits
-            </span>
+          <Link href="/" className="flex items-center mb-3">
+            <Image src="/logo.png" alt="Maps & Permits" width={220} height={120} className="h-14 w-auto" />
           </Link>
-          <p className="text-sm text-white/70 mb-1">Plans Approved. Projects Moving.</p>
           <p className="text-sm text-white/60">
             Architecture, engineering, permit drawings, municipal approvals and
             construction solutions across the GTA.

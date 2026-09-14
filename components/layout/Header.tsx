@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { Menu, X, MapPin } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -39,14 +40,8 @@ export default function Header() {
       }`}
     >
       <div className="container-page flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 shrink-0">
-          <span className="flex items-center justify-center w-9 h-9 rounded-lg grad-blue text-white">
-            <MapPin className="w-5 h-5" />
-          </span>
-          <span className="font-heading font-extrabold text-lg leading-none">
-            <span className="text-[var(--navy)]">Maps</span>
-            <span className="text-[var(--dark-green)]"> &amp; Permits</span>
-          </span>
+        <Link href="/" className="flex items-center shrink-0">
+          <Image src="/logo.png" alt="Maps & Permits" width={220} height={120} className="h-12 w-auto" priority />
         </Link>
 
         <nav className="hidden md:flex items-center gap-7">
