@@ -54,6 +54,7 @@ export const SERVICE_AREA_CITIES = [
 export const CONTACT_PHONE = "437-777-6887";
 export const CONTACT_PHONE_TEL = "4377776887";
 export const CONTACT_EMAIL = "maps.permit@gmail.com";
+export const CONTACT_EMAIL_SECONDARY = "info@mapsandpermits.ca";
 export const SOCIAL_HANDLE = "maps.permits";
 
 export interface FallbackService {

@@ -70,11 +70,16 @@ export default function Footer() {
               <Phone className="w-4 h-4 text-[var(--bright-green)]" />
               <a href="tel:4377776887" className="hover:text-white">437-777-6887</a>
             </li>
-            <li className="flex items-center gap-2">
-              <Mail className="w-4 h-4 text-[var(--bright-green)]" />
-              <a href="mailto:maps.permit@gmail.com" className="hover:text-white">
-                maps.permit@gmail.com
-              </a>
+            <li className="flex items-start gap-2">
+              <Mail className="w-4 h-4 text-[var(--bright-green)] mt-0.5" />
+              <div className="flex flex-col">
+                <a href="mailto:maps.permit@gmail.com" className="hover:text-white">
+                  maps.permit@gmail.com
+                </a>
+                <a href="mailto:info@mapsandpermits.ca" className="hover:text-white">
+                  info@mapsandpermits.ca
+                </a>
+              </div>
             </li>
             <li className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-[var(--bright-green)]" />

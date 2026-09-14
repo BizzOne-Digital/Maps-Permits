@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import PageHero from "@/components/common/PageHero";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import ContactForm from "@/components/common/ContactForm";
-import { CONTACT_PHONE, CONTACT_PHONE_TEL, CONTACT_EMAIL } from "@/lib/constants";
+import { CONTACT_PHONE, CONTACT_PHONE_TEL, CONTACT_EMAIL, CONTACT_EMAIL_SECONDARY } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -39,8 +39,11 @@ export default function ContactPage() {
                 <Mail className="w-5 h-5" />
               </span>
               <h3 className="font-heading font-bold text-[var(--navy)] mb-1">Email Us</h3>
-              <a href={`mailto:${CONTACT_EMAIL}`} className="text-sm text-[var(--muted)] hover:text-[var(--primary-blue)]">
+              <a href={`mailto:${CONTACT_EMAIL}`} className="block text-sm text-[var(--muted)] hover:text-[var(--primary-blue)]">
                 {CONTACT_EMAIL}
+              </a>
+              <a href={`mailto:${CONTACT_EMAIL_SECONDARY}`} className="block text-sm text-[var(--muted)] hover:text-[var(--primary-blue)]">
+                {CONTACT_EMAIL_SECONDARY}
               </a>
             </div>
             <div className="rounded-xl border border-[var(--border)] p-6">
