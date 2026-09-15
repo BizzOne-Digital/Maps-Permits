@@ -42,11 +42,11 @@ export default function Header() {
       <div className="container-page flex items-center justify-between">
         <Link href="/" className="flex items-center shrink-0">
           <Image
-            src="/logo.png"
+            src="/logo1.png"
             alt="Maps & Permits"
-            width={280}
-            height={150}
-            className={`w-auto transition-all duration-300 ${scrolled ? "h-12 md:h-14" : "h-14 md:h-20"}`}
+            width={326}
+            height={109}
+            className={`w-auto transition-all duration-300 ${scrolled ? "h-10 md:h-12" : "h-12 md:h-16"}`}
             priority
           />
         </Link>
