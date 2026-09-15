@@ -10,6 +10,30 @@ export type LeadStatus = (typeof LEAD_STATUSES)[number];
 export const UPLOAD_FOLDERS = ["products", "gallery", "pages", "misc"] as const;
 export type UploadFolder = (typeof UPLOAD_FOLDERS)[number];
 
+export const PERMIT_DRAWING_TYPES = [
+  "Legal Basement (Accessory Apartment)",
+  "In-Law Suite Basement (Owner Use)",
+  "Below-Grade Staircase",
+  "Above-Grade Side Door",
+  "Interior Renovations",
+  "Triplex Dwelling",
+  "Sports Bar",
+  "Dine-In Restaurant & Bar",
+  "Take-out Restaurant",
+  "Cannabis Store",
+  "Doctor Clinic & Pharmacy",
+  "Retail Plaza",
+  "Convenience & Grocery Store",
+  "Cafe & Juice Bar",
+  "Tutoring Institute",
+  "House Extension & Addition",
+  "Sunroom",
+  "Garden Suite / Nanny Apartment",
+  "Deck, Shed, Gazebo & Pergola",
+  "Load Bearing Wall Removal",
+  "Driveway Widening",
+];
+
 export const SERVICE_AREA_CITIES = [
   "Brampton",
   "Mississauga",

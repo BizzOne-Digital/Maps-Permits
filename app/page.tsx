@@ -308,10 +308,10 @@ export default async function HomePage() {
             </ul>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <StatsCard value="100 KM+" label="Service Radius" />
+            <StatsCard value="3000+" label="Permits Approved" />
+            <StatsCard value="55+" label="Municipalities Served" />
             <StatsCard value="24 HR" label="Fast-Track Drawing Option" />
-            <StatsCard value="GTA" label="Focused Service Area" />
-            <StatsCard value="End-to-End" label="Project Support" />
+            <StatsCard value="100 KM+" label="Service Radius" />
           </div>
         </div>
       </section>

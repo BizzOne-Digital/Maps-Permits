@@ -5,9 +5,10 @@ import ServiceCard from "@/components/common/ServiceCard";
 import SectionHeading from "@/components/common/SectionHeading";
 import StatsCard from "@/components/common/StatsCard";
 import CTAButton from "@/components/common/CTAButton";
+import { CheckCircle2 } from "lucide-react";
 import connectToDatabase from "@/lib/mongodb";
 import Service from "@/models/Service";
-import { FALLBACK_SERVICES } from "@/lib/constants";
+import { FALLBACK_SERVICES, PERMIT_DRAWING_TYPES } from "@/lib/constants";
 
 const PROCESS = [
   {
@@ -79,6 +80,28 @@ export default async function ServicesPage() {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* PERMIT DRAWING TYPES */}
+      <section className="py-20 bg-white">
+        <div className="container-page">
+          <SectionHeading
+            eyebrow="WHAT WE COVER"
+            title="Permit Drawings We Handle"
+            description="From legal basements to commercial fit-outs, we've prepared drawings for a wide range of residential and commercial projects across the GTA and beyond."
+          />
+          <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 max-w-4xl mx-auto">
+            {PERMIT_DRAWING_TYPES.map((type) => (
+              <div key={type} className="flex items-center gap-3">
+                <CheckCircle2 className="w-5 h-5 text-[var(--dark-green)] shrink-0" />
+                <span className="text-sm font-medium text-[var(--text)]">{type}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-sm text-[var(--muted)] mt-8">
+            &amp; many more — get in touch to discuss your specific project.
+          </p>
         </div>
       </section>
 

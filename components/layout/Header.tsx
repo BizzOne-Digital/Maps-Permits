@@ -41,7 +41,14 @@ export default function Header() {
     >
       <div className="container-page flex items-center justify-between">
         <Link href="/" className="flex items-center shrink-0">
-          <Image src="/logo.png" alt="Maps & Permits" width={220} height={120} className="h-12 w-auto" priority />
+          <Image
+            src="/logo.png"
+            alt="Maps & Permits"
+            width={280}
+            height={150}
+            className={`w-auto transition-all duration-300 ${scrolled ? "h-12 md:h-14" : "h-14 md:h-20"}`}
+            priority
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-7">
