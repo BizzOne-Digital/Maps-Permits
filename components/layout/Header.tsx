@@ -46,7 +46,7 @@ export default function Header() {
             alt="Maps & Permits"
             width={326}
             height={109}
-            className={`w-auto transition-all duration-300 ${scrolled ? "h-10 md:h-12" : "h-12 md:h-16"}`}
+            className={`w-auto transition-all duration-300 ${scrolled ? "h-12 md:h-16" : "h-14 md:h-20"}`}
             priority
           />
         </Link>

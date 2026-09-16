@@ -149,17 +149,6 @@ export default async function HomePage() {
               </div>
             ))}
           </div>
-
-          <div className="flex flex-wrap gap-2">
-            {["GTA", ...SERVICE_AREA_CITIES.map((c) => c.toUpperCase()), "AND BEYOND"].map((city) => (
-              <span
-                key={city}
-                className="text-[11px] font-semibold tracking-wide uppercase text-white/60 border border-white/15 rounded-full px-3 py-1"
-              >
-                {city}
-              </span>
-            ))}
-          </div>
         </div>
 
         <div className="hidden lg:flex absolute top-24 right-16 items-center gap-3 rounded-xl bg-white shadow-xl px-5 py-4 z-10">

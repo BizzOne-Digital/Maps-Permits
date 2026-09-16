@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="container-page py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
           <Link href="/" className="flex items-center mb-3">
-            <Image src="/logo1.png" alt="Maps & Permits" width={326} height={109} className="h-12 w-auto" />
+            <Image src="/logo1.png" alt="Maps & Permits" width={326} height={109} className="h-16 w-auto" />
           </Link>
           <p className="text-sm text-white/60">
             Architecture, engineering, permit drawings, municipal approvals and
